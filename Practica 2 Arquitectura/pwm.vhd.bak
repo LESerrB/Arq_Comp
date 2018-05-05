@@ -1,0 +1,29 @@
+library IEEE;
+use IEEE.STD_LOGIC_1164.ALL;
+use IEEE.STD_LOGIC_ARITH.ALL;
+use IEEE.STD_LOGIC_UNSIGNED.ALL;
+
+entity pwm is
+	Port (	reloj : in std_logic;
+				sal_pwm : out std_logic_vector (1 DOWNTO 0)	);
+end pwm;
+
+architecture Behavioral of pwm is
+	begin
+	process (reloj)
+		variable cuenta: std_logic_vector (20 downto 0):=X"00000";
+		begin
+			if rising_edge (reloj) then
+				if cuenta= X"18E98" then	--CICLO COMPLETO
+					cuenta:= X"00000";
+				elsif cuenta< X"63A6" then	--CICLO 25%
+					cuenta:= cuenta+1;
+					t_on:='1';
+				else
+					cuenta:= cuenta+1;
+					t_on:='0';
+				end if;
+			end if;
+		div_clk <= cuenta (25);
+	end process;
+end Behavioral;
