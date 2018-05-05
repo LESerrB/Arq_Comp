@@ -1,0 +1,31 @@
+library IEEE;
+use IEEE.STD_LOGIC_1164.ALL;
+use IEEE.STD_LOGIC_ARITH.ALL;
+use IEEE.STD_LOGIC_UNSIGNED.ALL;
+
+entity reg_liga is
+Port ( CLK : in STD_LOGIC;
+		 RESET : in STD_LOGIC;
+		 PL: in STD_LOGIC;
+		 liga_in: in STD_LOGIC_VECTOR (3 downto 0);
+		 liga_out: out STD_LOGIC_VECTOR (3 downto 0)
+		 );
+end reg_liga;
+
+architecture Behavioral of reg_liga is
+signal valor : STD_LOGIC_VECTOR (3 downto 0) := B"0000";
+begin
+	
+	process(CLK, RESET, liga_in)
+	begin
+		if RESET = '0' then valor <= "0000";
+		elsif rising_edge(CLK) and PL = '0' then valor <= liga_in;
+		elsif rising_edge(CLK) and PL = '1' then valor <= "ZZZZ";
+		end if;
+	end process;
+	process (valor)
+	begin
+		liga_out <= valor;
+	end process;
+
+end Behavioral;

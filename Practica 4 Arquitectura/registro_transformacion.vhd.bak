@@ -1,0 +1,32 @@
+library IEEE;
+use IEEE.STD_LOGIC_1164.ALL;
+use IEEE.STD_LOGIC_ARITH.ALL;
+use IEEE.STD_LOGIC_UNSIGNED.ALL;
+
+entity registro_transformacion is
+Port ( CLK : in STD_LOGIC;
+		 RESET : in STD_LOGIC;
+		 MAP1 : in STD_LOGIC;
+		 trans_in: in STD_LOGIC_VECTOR (3 downto 0);
+		 trans_out: out STD_LOGIC_VECTOR (3 downto 0)
+		 );
+end registro_transformacion;
+
+architecture Behavioral of registro_transformacion is
+signal valor : STD_LOGIC_VECTOR (3 downto 0) := B"0000";
+begin
+	
+	process(CLK, RESET, MAP1, trans_in)
+	begin
+		if RESET = '0' then valor <= "0000";
+		elsif rising_edge(CLK) and MAP1 <= '0' then valor <= trans_in;
+		elsif rising_edge(CLK) and MAP1 <= '1' then valor <= "ZZZZ";
+		end if;
+	end process;
+	
+	process (valor)
+	begin
+		trans_out <= valor;
+	end process;
+
+end Behavioral;

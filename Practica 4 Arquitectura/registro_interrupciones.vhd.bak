@@ -1,0 +1,32 @@
+library IEEE;
+use IEEE.STD_LOGIC_1164.ALL;
+use IEEE.STD_LOGIC_ARITH.ALL;
+use IEEE.STD_LOGIC_UNSIGNED.ALL;
+
+entity registro_interrupcion is
+Port ( CLK : in STD_LOGIC;
+		 RESET : in STD_LOGIC;
+		 VECT : in STD_LOGIC;
+		 inter_in: in STD_LOGIC_VECTOR (3 downto 0);
+		 inter_out: out STD_LOGIC_VECTOR (3 downto 0)
+		 );
+end registro_interrupcion;
+
+architecture Behavioral of registro_interrupcion is
+signal valor : STD_LOGIC_VECTOR (3 downto 0);
+begin
+	
+	process(CLK, RESET, inter_in, VECT)
+	begin
+		if RESET = '0' then valor <= B"0000";
+		elsif rising_edge(CLK) and VECT = '0' then valor <= inter_in;
+		elsif rising_edge(CLK) and VECT = '1' then valor <= "ZZZZ";
+		end if;
+	end process;
+
+	
+	process (valor)
+	begin
+		inter_out <= valor;
+	end process;
+end Behavioral;

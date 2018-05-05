@@ -1,0 +1,30 @@
+library IEEE;
+use IEEE.STD_LOGIC_1164.ALL;
+use IEEE.STD_LOGIC_ARITH.ALL;
+use IEEE.STD_LOGIC_UNSIGNED.ALL;
+
+entity reg_mpc is
+Port ( RESET : in STD_LOGIC;
+		 CLK: in STD_LOGIC;
+		 entrada: in STD_LOGIC_VECTOR (3 downto 0);
+		 estado_siguiente : out STD_LOGIC_VECTOR (3 downto 0)
+		 );
+end reg_mpc;
+
+architecture Behavioral of reg_mpc is
+signal valor: STD_LOGIC_VECTOR (3 downto 0):=B"0000";
+begin
+	
+	process(CLK, RESET, entrada)
+	begin
+		if RESET='0' then valor <= B"0000";
+		elsif rising_edge(CLK) then valor <= entrada;
+		end if;
+	end process;
+	
+	process (valor)
+	begin 
+		estado_siguiente <= valor;
+	end process;
+
+end Behavioral;
