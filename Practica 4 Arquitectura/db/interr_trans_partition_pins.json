@@ -1,0 +1,73 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "est_pres[3]",
+					"strict" : false
+				},
+				{
+					"name" : "est_pres[2]",
+					"strict" : false
+				},
+				{
+					"name" : "est_pres[1]",
+					"strict" : false
+				},
+				{
+					"name" : "est_pres[0]",
+					"strict" : false
+				},
+				{
+					"name" : "SAL_PWM[1]",
+					"strict" : false
+				},
+				{
+					"name" : "SAL_PWM[0]",
+					"strict" : false
+				},
+				{
+					"name" : "SALIDAS[3]",
+					"strict" : false
+				},
+				{
+					"name" : "SALIDAS[2]",
+					"strict" : false
+				},
+				{
+					"name" : "SALIDAS[1]",
+					"strict" : false
+				},
+				{
+					"name" : "SALIDAS[0]",
+					"strict" : false
+				},
+				{
+					"name" : "X",
+					"strict" : false
+				},
+				{
+					"name" : "Y",
+					"strict" : false
+				},
+				{
+					"name" : "B",
+					"strict" : false
+				},
+				{
+					"name" : "A",
+					"strict" : false
+				},
+				{
+					"name" : "RESET",
+					"strict" : false
+				},
+				{
+					"name" : "CLK",
+					"strict" : false
+				}
+			]
+		}
+	]
+}
