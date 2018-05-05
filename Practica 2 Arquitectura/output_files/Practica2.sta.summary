@@ -1,0 +1,113 @@
+------------------------------------------------------------
+TimeQuest Timing Analyzer Summary
+------------------------------------------------------------
+
+Type  : Slow 1200mV 85C Model Setup 'sensa_boton:inst8|reloj'
+Slack : -2.181
+TNS   : -12.850
+
+Type  : Slow 1200mV 85C Model Setup 'carta_asm_2:inst|adelante'
+Slack : -0.978
+TNS   : -3.052
+
+Type  : Slow 1200mV 85C Model Setup 'reloj'
+Slack : 0.244
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'carta_asm_2:inst|adelante'
+Slack : 0.299
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'sensa_boton:inst8|reloj'
+Slack : 0.357
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'reloj'
+Slack : 0.373
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'reloj'
+Slack : -3.000
+TNS   : -5.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'sensa_boton:inst8|reloj'
+Slack : -1.000
+TNS   : -12.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'carta_asm_2:inst|adelante'
+Slack : 0.408
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Setup 'sensa_boton:inst8|reloj'
+Slack : -1.863
+TNS   : -10.188
+
+Type  : Slow 1200mV 0C Model Setup 'carta_asm_2:inst|adelante'
+Slack : -0.782
+TNS   : -2.360
+
+Type  : Slow 1200mV 0C Model Setup 'reloj'
+Slack : 0.329
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'sensa_boton:inst8|reloj'
+Slack : 0.312
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'carta_asm_2:inst|adelante'
+Slack : 0.313
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'reloj'
+Slack : 0.339
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'reloj'
+Slack : -3.000
+TNS   : -5.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'sensa_boton:inst8|reloj'
+Slack : -1.000
+TNS   : -12.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'carta_asm_2:inst|adelante'
+Slack : 0.462
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Setup 'sensa_boton:inst8|reloj'
+Slack : -0.830
+TNS   : -3.558
+
+Type  : Fast 1200mV 0C Model Setup 'carta_asm_2:inst|adelante'
+Slack : -0.488
+TNS   : -0.939
+
+Type  : Fast 1200mV 0C Model Setup 'reloj'
+Slack : 0.578
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'carta_asm_2:inst|adelante'
+Slack : 0.056
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'sensa_boton:inst8|reloj'
+Slack : 0.187
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'reloj'
+Slack : 0.193
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'reloj'
+Slack : -3.000
+TNS   : -5.108
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'sensa_boton:inst8|reloj'
+Slack : -1.000
+TNS   : -12.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'carta_asm_2:inst|adelante'
+Slack : 0.355
+TNS   : 0.000
+
+------------------------------------------------------------

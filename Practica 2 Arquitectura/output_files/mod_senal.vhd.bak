@@ -1,0 +1,39 @@
+library IEEE;
+use IEEE.STD_LOGIC_1164.ALL;
+use IEEE.STD_LOGIC_ARITH.ALL;
+use IEEE.STD_LOGIC_UNSIGNED.ALL;
+
+entity mod_senal is
+Port (  senal : in STD_LOGIC_VECTOR(2 DOWNTO 0);
+			s : out STD_LOGIC_VECTOR(3 DOWNTO 0);
+			salida : out STD_LOGIC_VECTOR(3 DOWNTO 0) );
+end mod_senal;
+
+architecture Behavioral of mod_senal is
+
+begin
+	process (senal, salida)
+
+	begin
+		case senal is
+			
+			when "00" =>	--ADELANTE
+				s <= "1010";
+
+			when "01" =>	--ATRAS
+				s <= "0101";
+				
+			when "10" =>	--IZQUIERDA
+				s <= "0110";
+				
+			when "11" =>	--ATRAS
+				s <= "1010";
+
+			when others => null;
+
+		end case;
+
+		salida <= s;
+		
+	end process;
+end Behavioral;
