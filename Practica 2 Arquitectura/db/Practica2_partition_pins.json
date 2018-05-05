@@ -1,0 +1,61 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "motor[3]",
+					"strict" : false
+				},
+				{
+					"name" : "motor[2]",
+					"strict" : false
+				},
+				{
+					"name" : "motor[1]",
+					"strict" : false
+				},
+				{
+					"name" : "motor[0]",
+					"strict" : false
+				},
+				{
+					"name" : "out_state[3]",
+					"strict" : false
+				},
+				{
+					"name" : "out_state[2]",
+					"strict" : false
+				},
+				{
+					"name" : "out_state[1]",
+					"strict" : false
+				},
+				{
+					"name" : "out_state[0]",
+					"strict" : false
+				},
+				{
+					"name" : "RESET",
+					"strict" : false
+				},
+				{
+					"name" : "S[0]",
+					"strict" : false
+				},
+				{
+					"name" : "S[1]",
+					"strict" : false
+				},
+				{
+					"name" : "boton",
+					"strict" : false
+				},
+				{
+					"name" : "reloj",
+					"strict" : false
+				}
+			]
+		}
+	]
+}
