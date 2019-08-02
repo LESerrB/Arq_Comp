@@ -1,0 +1,111 @@
+library IEEE;
+use IEEE.STD_LOGIC_1164.ALL;
+use IEEE.STD_LOGIC_ARITH.ALL;
+use IEEE.STD_LOGIC_UNSIGNED.ALL;
+
+entity memoria_programa is
+	Port( dir : in std_logic_vector(15 downto 0);
+			data_in : in std_logic_vector(7 downto 0);
+			nRW : in std_logic;
+			data_out : out std_logic_vector(7 downto 0);
+			data_out_X0 : out std_logic_vector(7 downto 0);
+			data_out_X1 : out std_logic_vector(7 downto 0);
+			data_out_X2 : out std_logic_vector(7 downto 0);
+			data_out_P7 : out std_logic_vector(7 downto 0);
+			data_out_P8 : out std_logic_vector(7 downto 0);
+			data_out_P9 : out std_logic_vector(7 downto 0);
+			data_out_P10 : out std_logic_vector(7 downto 0);
+			data_out_P11 : out std_logic_vector(7 downto 0);
+			data_out_P12 : out std_logic_vector(7 downto 0);
+			data_out_P13 : out std_logic_vector(7 downto 0);
+			data_out_P14 : out std_logic_vector(7 downto 0);
+			data_out_P15 : out std_logic_vector(7 downto 0)
+			);
+end memoria_programa;
+
+architecture Behavioral of memoria_programa is
+	type memory is array(0 to 255) of std_logic_vector(7 downto 0);
+	signal memoria : memory;
+	
+	-- La pila empieza en la última posición de la memoria 255 = FF, entonces la direccion es 00FF
+	-- El tamaño de la pila es de 16 bytes (arbitrario)
+	-- La pila termina en EF
+	begin
+		process(dir,nRW)
+			begin
+		-- Programa HARDCODE PRUEBAS
+			memoria(20) <= X"CE"; -- LDX
+			memoria(21) <= X"00"; 
+			memoria(22) <= X"0C";
+			memoria(23) <= X"86"; -- LDAA
+			memoria(24) <= X"0C"; -- 12%
+			memoria(25) <= X"A7"; -- STAA 
+			memoria(26) <= X"01";
+			memoria(27) <= X"C6"; -- LDAB
+			memoria(28) <= X"05"; -- move adelante
+			memoria(29) <= X"E7"; -- STAB
+			memoria(30) <= X"00";
+			memoria(31) <= X"01"; -- NOP
+			memoria(32) <= X"01"; -- NOP
+			memoria(33) <= X"01"; -- NOP
+			memoria(34) <= X"C6"; -- LDAB
+			memoria(35) <= X"06"; -- move giro izquierda
+			memoria(36) <= X"E7"; -- STAB
+			memoria(37) <= X"00";
+			memoria(38) <= X"C6"; -- LDAB
+			memoria(39) <= X"00"; -- detenido
+			memoria(40) <= X"E7"; -- STAB
+			memoria(41) <= X"00"; 
+			memoria(42) <= X"20"; -- BRA FIN
+			memoria(43) <= X"FE"; 
+			
+			-- DRIVERS DE INTERRUPCIONES
+			-- Driver X Externo (0064 H)
+			memoria(100) <= X"CE"; -- LDX
+			memoria(101) <= X"00";
+			memoria(102) <= X"20";
+			memoria(103) <= X"B6"; -- LDAA Dir_6_bits
+			memoria(104) <= X"00";
+			memoria(105) <= X"30";
+			memoria(106) <= X"A7"; -- STAA
+			memoria(107) <= X"00";
+			memoria(108) <= X"3B"; -- RTI
+			
+			-- Driver Y Interno (006D H)
+			memoria(109) <= X"CE"; -- LDX
+			memoria(110) <= X"00";
+			memoria(111) <= X"30";
+			memoria(112) <= X"F6"; -- LDAB Dir_6_bits
+			memoria(113) <= X"00";
+			memoria(114) <= X"20";
+			memoria(115) <= X"E7"; -- STAB
+			memoria(116) <= X"00";
+			memoria(117) <= X"3B"; -- RTI
+			memoria(118) <= X"3B"; -- RTI
+			
+			
+			--FUNCION DE LA MEMORIA
+			if(nRW = '0') then -- Modo escritura
+				memoria(conv_integer(unsigned(dir))) <= data_in;
+			else -- Modo lectura
+				data_out <= memoria(conv_integer(unsigned(dir)));
+			end if;
+			
+			-- DEBUG
+			data_out_X0 <= memoria(12);  -- X"000C"
+			data_out_X1 <= memoria(13);  -- X"000C" + 1
+			data_out_X2 <= memoria(14);  -- X"000C" + 2
+			
+			-- PILA
+			data_out_P7 <= memoria(247);
+			data_out_P8 <= memoria(248);
+			data_out_P9 <= memoria(249);
+			data_out_P10 <= memoria(250);
+			data_out_P11 <= memoria(251);
+			data_out_P12 <= memoria(252);
+			data_out_P13 <= memoria(253);
+
+			data_out_P14 <= memoria(254);
+			data_out_P15 <= memoria(255);
+		end process;
+end Behavioral;

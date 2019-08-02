@@ -1,0 +1,113 @@
+------------------------------------------------------------
+TimeQuest Timing Analyzer Summary
+------------------------------------------------------------
+
+Type  : Slow 1200mV 85C Model Setup 'micro68HC11:inst|nRW'
+Slack : -9.984
+TNS   : -5417.185
+
+Type  : Slow 1200mV 85C Model Setup 'divider:inst2|cuenta[19]'
+Slack : -7.879
+TNS   : -640.606
+
+Type  : Slow 1200mV 85C Model Setup 'reloj'
+Slack : -4.676
+TNS   : -169.934
+
+Type  : Slow 1200mV 85C Model Hold 'micro68HC11:inst|nRW'
+Slack : 0.127
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'divider:inst2|cuenta[19]'
+Slack : 0.344
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'reloj'
+Slack : 0.344
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'reloj'
+Slack : -3.000
+TNS   : -53.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'divider:inst2|cuenta[19]'
+Slack : -1.000
+TNS   : -125.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'micro68HC11:inst|nRW'
+Slack : 0.068
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Setup 'micro68HC11:inst|nRW'
+Slack : -8.843
+TNS   : -4832.968
+
+Type  : Slow 1200mV 0C Model Setup 'divider:inst2|cuenta[19]'
+Slack : -7.093
+TNS   : -568.387
+
+Type  : Slow 1200mV 0C Model Setup 'reloj'
+Slack : -4.220
+TNS   : -150.933
+
+Type  : Slow 1200mV 0C Model Hold 'micro68HC11:inst|nRW'
+Slack : 0.225
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'divider:inst2|cuenta[19]'
+Slack : 0.299
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'reloj'
+Slack : 0.300
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'reloj'
+Slack : -3.000
+TNS   : -53.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'divider:inst2|cuenta[19]'
+Slack : -1.000
+TNS   : -125.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'micro68HC11:inst|nRW'
+Slack : 0.244
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Setup 'micro68HC11:inst|nRW'
+Slack : -5.476
+TNS   : -2565.222
+
+Type  : Fast 1200mV 0C Model Setup 'divider:inst2|cuenta[19]'
+Slack : -4.084
+TNS   : -312.484
+
+Type  : Fast 1200mV 0C Model Setup 'reloj'
+Slack : -2.489
+TNS   : -78.786
+
+Type  : Fast 1200mV 0C Model Hold 'divider:inst2|cuenta[19]'
+Slack : 0.098
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'micro68HC11:inst|nRW'
+Slack : 0.147
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'reloj'
+Slack : 0.179
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'reloj'
+Slack : -3.000
+TNS   : -56.064
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'divider:inst2|cuenta[19]'
+Slack : -1.000
+TNS   : -125.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'micro68HC11:inst|nRW'
+Slack : 0.064
+TNS   : 0.000
+
+------------------------------------------------------------

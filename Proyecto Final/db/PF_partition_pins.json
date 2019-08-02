@@ -1,0 +1,157 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "S2Der",
+					"strict" : false
+				},
+				{
+					"name" : "S1Izq",
+					"strict" : false
+				},
+				{
+					"name" : "A_out[7]",
+					"strict" : false
+				},
+				{
+					"name" : "A_out[6]",
+					"strict" : false
+				},
+				{
+					"name" : "A_out[5]",
+					"strict" : false
+				},
+				{
+					"name" : "A_out[4]",
+					"strict" : false
+				},
+				{
+					"name" : "A_out[3]",
+					"strict" : false
+				},
+				{
+					"name" : "A_out[2]",
+					"strict" : false
+				},
+				{
+					"name" : "A_out[1]",
+					"strict" : false
+				},
+				{
+					"name" : "A_out[0]",
+					"strict" : false
+				},
+				{
+					"name" : "B_out[7]",
+					"strict" : false
+				},
+				{
+					"name" : "B_out[6]",
+					"strict" : false
+				},
+				{
+					"name" : "B_out[5]",
+					"strict" : false
+				},
+				{
+					"name" : "B_out[4]",
+					"strict" : false
+				},
+				{
+					"name" : "B_out[3]",
+					"strict" : false
+				},
+				{
+					"name" : "B_out[2]",
+					"strict" : false
+				},
+				{
+					"name" : "B_out[1]",
+					"strict" : false
+				},
+				{
+					"name" : "B_out[0]",
+					"strict" : false
+				},
+				{
+					"name" : "data_out_X0[7]",
+					"strict" : false
+				},
+				{
+					"name" : "data_out_X0[6]",
+					"strict" : false
+				},
+				{
+					"name" : "data_out_X0[5]",
+					"strict" : false
+				},
+				{
+					"name" : "data_out_X0[4]",
+					"strict" : false
+				},
+				{
+					"name" : "data_out_X0[3]",
+					"strict" : false
+				},
+				{
+					"name" : "data_out_X0[2]",
+					"strict" : false
+				},
+				{
+					"name" : "data_out_X0[1]",
+					"strict" : false
+				},
+				{
+					"name" : "data_out_X0[0]",
+					"strict" : false
+				},
+				{
+					"name" : "e_presente_out[7]",
+					"strict" : false
+				},
+				{
+					"name" : "e_presente_out[6]",
+					"strict" : false
+				},
+				{
+					"name" : "e_presente_out[5]",
+					"strict" : false
+				},
+				{
+					"name" : "e_presente_out[4]",
+					"strict" : false
+				},
+				{
+					"name" : "e_presente_out[3]",
+					"strict" : false
+				},
+				{
+					"name" : "e_presente_out[2]",
+					"strict" : false
+				},
+				{
+					"name" : "e_presente_out[1]",
+					"strict" : false
+				},
+				{
+					"name" : "e_presente_out[0]",
+					"strict" : false
+				},
+				{
+					"name" : "reloj",
+					"strict" : false
+				},
+				{
+					"name" : "reset",
+					"strict" : false
+				},
+				{
+					"name" : "nIRQ",
+					"strict" : false
+				}
+			]
+		}
+	]
+}

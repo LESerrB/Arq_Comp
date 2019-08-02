@@ -1,0 +1,78 @@
+
+
+
+
+library IEEE;
+use IEEE.STD_LOGIC_1164.ALL;
+use IEEE.STD_LOGIC_ARITH.ALL;
+use IEEE.STD_LOGIC_UNSIGNED.ALL;
+
+entity Npwm is 
+  Port ( 
+  clk : in STD_LOGIC;
+  SIzq : out STD_LOGIC;
+  SDer : out STD_LOGIC;
+  Dir:in STD_LOGIC_VECTOR(7 downto 0);
+  duty: in STD_LOGIC_VECTOR( 7 downto 0));
+end Npwm;
+
+Architecture Behavioral of Npwm is
+begin	  
+process(clk,duty)
+variable  izq: std_logic:='1';
+variable  der: std_logic:='1';
+variable dutyI: std_logic_vector(19 downto 0);
+variable dutyD: std_logic_vector(19 downto 0);
+variable contador: std_logic_vector(19 downto 0):= X"00000";
+begin
+
+   if rising_edge (clk) then 
+--------------------------------12% 0c      
+
+	  if contador = X"031D3" and izq='1'  and duty=x"0C"then
+	  izq='0';
+	  elsif contador = X"031D3" and der='1' and duty=x"0C" then
+	  der='0';
+	  elsif  contador = X"18E98" and s1aux='0'  and duty=x"0C" then
+	    izq:='1';
+		der:='1';
+		contador:=X"00000";
+	  else
+        contador:=contador+1;
+	  end if;
+	  
+------------------------25 %  19
+
+    if contador = X"031D3" and izq='1'  and duty=x"19"then
+	  izq='0';
+	  elsif contador = X"031D3" and der='1' and duty=x"19" then
+	  der='0';
+	  elsif  contador = X"18E98" and s1aux='0'  and duty=x"19" then
+	    izq:='1';
+		der:='1';
+		contador:=X"00000";
+	  else
+        contador:=contador+1;
+	  end if;
+
+
+
+--------------------------50 %32	  
+
+    if contador = X"031D3" and izq='1'  and duty=x"32" then
+	   izq='0';
+	   elsif contador = X"031D3" and der='1' and duty=x"32" then
+	   der='0';
+	   elsif  contador = X"18E98" and s1aux='0'  and duty=x"32" then
+	    izq:='1';
+		der:='1';
+		contador:=X"00000";
+	   else
+        contador:=contador+1;
+	  end if;
+	end if;
+	
+     SIzq<=izq;
+     SDer<=der;	
+end process;
+end Behavioral;	

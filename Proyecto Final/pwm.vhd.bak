@@ -1,0 +1,32 @@
+
+
+library IEEE;
+use IEEE.STD_LOGIC_1164.ALL;
+use IEEE.STD_LOGIC_ARITH.ALL;
+use IEEE.STD_LOGIC_UNSIGNED.ALL;
+
+entity pwm is 
+  Port ( 
+  clk : in STD_LOGIC;
+  S1 : out STD_LOGIC;
+  S2 : out STD_LOGIC;
+  BE: in STD_LOGIC_VECTOR( 7 downto 0));
+end pwm;
+
+
+Architecture Behavioral of pwm is
+begin	  
+process(clk)
+begin
+
+if comparacion = X"32" then 
+   
+
+end if;
+
+
+
+
+
+end process;
+end Behavioral;

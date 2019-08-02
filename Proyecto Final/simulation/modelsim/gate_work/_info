@@ -1,0 +1,61 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dE:/Software/ProyectoFinal_Arquitectura_de_Computadoras/simulation/modelsim
+Epf
+Z1 w1513200888
+Z2 DPx10 cycloneive 20 cycloneive_atom_pack 0 22 9L7WOjalBLjVlJ:R>F9:13
+Z3 DPx10 cycloneive 21 cycloneive_components 0 22 zHe@=:>9cbU;4Xj]jOJ^60
+Z4 DPx4 ieee 16 vital_primitives 0 22 G>kiXP8Q9dRClKfK1Zn7j1
+Z5 DPx6 altera 11 dffeas_pack 0 22 VGN[`NdbD557>Wc5mPGc93
+Z6 DPx4 ieee 12 vital_timing 0 22 J>EBealN09f8GzldA[z2>3
+Z7 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z8 DPx4 ieee 14 std_logic_1164 0 22 eNV`TJ_GofJTzYa?f<@Oe1
+Z9 DPx6 altera 28 altera_primitives_components 0 22 z;MfmOU0<abV50UVn9d221
+R0
+Z10 8PF_6_1200mv_85c_slow.vho
+Z11 FPF_6_1200mv_85c_slow.vho
+l0
+L37
+Vc1Vb@zUH;3[Z]mZ5lUd3=3
+!s100 eEH@H@GeEdS9VY<n_Qh>N3
+Z12 OV;C;10.4b;61
+31
+!s110 1513202381
+!i10b 1
+Z13 !s108 1513202379.000000
+Z14 !s90 -reportprogress|300|-93|-work|work|PF_6_1200mv_85c_slow.vho|
+Z15 !s107 PF_6_1200mv_85c_slow.vho|
+!i113 1
+Z16 o-93 -work work
+Z17 tExplicit 1
+Astructure
+R2
+R3
+R4
+R5
+R6
+R7
+R8
+R9
+DEx4 work 2 pf 0 22 c1Vb@zUH;3[Z]mZ5lUd3=3
+l3978
+L109
+V2I;k8?KS9UgfPAL5d_hjY2
+!s100 EJ3J9S=O?48d;3Z:kNc3g0
+R12
+31
+!s110 1513202383
+!i10b 1
+R13
+R14
+R15
+!i113 1
+R16
+R17

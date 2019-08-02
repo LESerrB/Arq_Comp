@@ -1,0 +1,109 @@
+# do PF_run_msim_gate_vhdl.do
+# if {[file exists gate_work]} {
+# 	vdel -lib gate_work -all
+# }
+# vlib gate_work
+# vmap work gate_work
+# Model Technology ModelSim ALTERA vmap 10.4b Lib Mapping Utility 2015.05 May 27 2015
+# vmap -modelsim_quiet work gate_work 
+# Copying C:/altera/15.1/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# ** Warning: Copied C:/altera/15.1/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini.
+#          Updated modelsim.ini.
+# 
+# vcom -93 -work work {PF_6_1200mv_85c_slow.vho}
+# Model Technology ModelSim ALTERA vcom 10.4b Compiler 2015.05 May 27 2015
+# Start time: 15:59:39 on Dec 13,2017
+# vcom -reportprogress 300 -93 -work work PF_6_1200mv_85c_slow.vho 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package VITAL_Timing
+# -- Loading package VITAL_Primitives
+# -- Loading package dffeas_pack
+# -- Loading package altera_primitives_components
+# -- Loading package cycloneive_atom_pack
+# -- Loading package cycloneive_components
+# -- Compiling entity PF
+# -- Compiling architecture structure of PF
+# End time: 16:00:10 on Dec 13,2017, Elapsed time: 0:00:31
+# Errors: 0, Warnings: 0
+# 
+vsim work.pf
+# vsim work.pf 
+# Start time: 16:00:16 on Dec 13,2017
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.vital_timing(body)
+# Loading ieee.vital_primitives(body)
+# Loading altera.dffeas_pack
+# Loading altera.altera_primitives_components
+# Loading cycloneive.cycloneive_atom_pack(body)
+# Loading cycloneive.cycloneive_components
+# Loading work.pf(structure)
+# Loading ieee.std_logic_arith(body)
+# Loading cycloneive.cycloneive_io_obuf(arch)
+# Loading cycloneive.cycloneive_io_ibuf(arch)
+# Loading cycloneive.cycloneive_clkctrl(vital_clkctrl)
+# Loading cycloneive.cycloneive_ena_reg(behave)
+# Loading cycloneive.cycloneive_lcell_comb(vital_lcell_comb)
+# Loading altera.dffeas(vital_dffeas)
+# ** Warning: Design size of 416782 statements exceeds ModelSim Altera Starter recommended capacity.
+# Expect performance to be adversely affected.
+add wave -position insertpoint  \
+sim:/pf/A_out
+add wave -position insertpoint  \
+sim:/pf/B_out
+add wave -position insertpoint  \
+sim:/pf/e_presente_out
+add wave -position insertpoint  \
+sim:/pf/reloj
+force -freeze sim:/pf/reloj 1 0, 0 {50 ps} -r 100
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+add wave -position insertpoint  \
+sim:/pf/ww_nIRQ
+force -freeze sim:/pf/ww_nIRQ 1 0
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+# End time: 16:05:39 on Dec 13,2017, Elapsed time: 0:05:23
+# Errors: 0, Warnings: 1

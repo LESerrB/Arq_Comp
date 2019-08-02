@@ -1,0 +1,16 @@
+Fitter Status : Successful - Mon Jun 11 16:57:35 2018
+Quartus Prime Version : 17.1.0 Build 590 10/25/2017 SJ Lite Edition
+Revision Name : PF
+Top-level Entity Name : PF
+Family : Cyclone IV E
+Device : EP4CE22F17C6
+Timing Models : Final
+Total logic elements : 5,514 / 22,320 ( 25 % )
+    Total combinational functions : 5,491 / 22,320 ( 25 % )
+    Dedicated logic registers : 175 / 22,320 ( < 1 % )
+Total registers : 175
+Total pins : 37 / 154 ( 24 % )
+Total virtual pins : 0
+Total memory bits : 0 / 608,256 ( 0 % )
+Embedded Multiplier 9-bit elements : 0 / 132 ( 0 % )
+Total PLLs : 0 / 4 ( 0 % )

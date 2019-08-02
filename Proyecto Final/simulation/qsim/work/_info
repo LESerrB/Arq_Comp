@@ -1,0 +1,52 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 d/home/rey/arquitectura_de_computadoras/ProyectoFinal_Arquitectura_de_Computadoras/simulation/qsim
+vPF
+Z1 !s110 1513216936
+!i10b 1
+!s100 ZXC3BDcTBod[T=D4eWaZz3
+InNc@WBY29cFM2oFOeb@5B1
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1513216936
+8PF.vo
+FPF.vo
+L0 32
+Z3 OV;L;10.4b;61
+r1
+!s85 0
+31
+Z4 !s108 1513216936.000000
+!s107 PF.vo|
+!s90 -work|work|PF.vo|
+!i113 1
+Z5 o-work work
+n@p@f
+vPF_vlg_vec_tst
+R1
+!i10b 1
+!s100 X9PId6A2QRbgCLoX64fhj1
+ICloX4RJT9io?MQOg5oQ_I3
+R2
+R0
+w1513216931
+8aa.vwf.vt
+Faa.vwf.vt
+L0 30
+R3
+r1
+!s85 0
+31
+R4
+!s107 aa.vwf.vt|
+!s90 -work|work|aa.vwf.vt|
+!i113 1
+R5
+n@p@f_vlg_vec_tst
